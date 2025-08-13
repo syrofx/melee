@@ -2,10 +2,17 @@
 #include <placeholder.h>
 
 #include "it/it_26B1.h"
+#include "it/it_266F.h"
+#include "it/inlines.h"
+
+#include <baselib/gobj.h>
+
+extern u32 it_803F56B8[];
 
 /// #it_80281164
 
 /// #fn_80281390
+void fn_80281390(HSD_GObj* gobj) { }
 
 /// #it_802813F8
 
@@ -98,19 +105,55 @@ void it_80283550(Item_GObj* gobj) {}
 
 /// #it_802838FC
 
-/// #it_80283960
+void it_80283960(Item_GObj* gobj)
+{
+    ItemAttr* temp_r4;
+    Item* item_data = GET_ITEM(gobj);
 
-/// #it_80283990
+    temp_r4 = item_data->xCC_item_attr;
+    it_80272860(gobj, temp_r4->x10_fall_speed, temp_r4->x14_fall_speed_max);
+}
 
-/// #it_802839BC
+bool it_80283990(Item_GObj* gobj) 
+{
+    it_8026E15C(gobj, (void (*)(HSD_GObj*)) fn_80281390);
+    return false;
+}
 
-/// #it_80283A3C
+bool it_802839BC(Item_GObj* gobj)
+{
+    Item* temp_r31 = gobj->user_data;
+    Item_8026AF0C(temp_r31, it_803F56B8[HSD_Randi(3)], 0x7F, 0x40);
 
-/// #it_80283A5C
+    if (temp_r31->msid == 5) 
+    {
+        itColl_BounceOffVictim(gobj);
+        it_802725D4(gobj);
+    }
+    return false;
+}
 
-/// #it_80283A80
+bool it_80283A3C(Item_GObj* gobj) 
+{
+    return it_80273030(gobj);
+}
 
-/// #it_80283AA4
+bool it_80283A5C(Item_GObj* gobj) 
+{
+    itColl_BounceOffVictim(gobj);
+    return false;
+}
+
+bool it_80283A80(Item_GObj* gobj)
+{
+    itColl_BounceOffVictim(gobj);
+    return false;
+}
+
+bool it_80283AA4(Item_GObj* gobj) 
+{
+    return itColl_BounceOffShield(gobj);
+}
 
 void it_80283AC4(Item_GObj* gobj, Item_GObj* ref_gobj)
 {

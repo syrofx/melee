@@ -3,10 +3,11 @@
 
 #include "it/forward.h"
 
+#include "it/item.h"
 #include "it/items/types.h"
 
 /* 281164 */ void it_80281164(Item_GObj*);
-/* 281390 */ UNK_RET fn_80281390(UNK_PARAMS);
+/* 281390 */ void fn_80281390(HSD_GObj* gobj);
 /* 2813F8 */ bool it_802813F8(Item_GObj* gobj);
 /* 2816F0 */ void it_802816F0(Item_GObj* gobj);
 /* 2816F4 */ bool it_802816F4(Item_GObj* gobj);
@@ -53,11 +54,11 @@
 /* 2838FC */ bool it_802838FC(Item_GObj* gobj);
 /* 283960 */ void it_80283960(Item_GObj* gobj);
 /* 283990 */ bool it_80283990(Item_GObj* gobj);
-/* 2839BC */ bool it_802839BC(Item_GObj*);
-/* 283A3C */ bool it_80283A3C(Item_GObj*);
-/* 283A5C */ bool it_80283A5C(Item_GObj*);
-/* 283A80 */ bool it_80283A80(Item_GObj*);
-/* 283AA4 */ bool it_80283AA4(Item_GObj*);
+/* 2839BC */ bool it_802839BC(Item_GObj* gobj);
+/* 283A3C */ bool it_80283A3C(Item_GObj* gobj);
+/* 283A5C */ bool it_80283A5C(Item_GObj* gObj);
+/* 283A80 */ bool it_80283A80(Item_GObj* gobj);
+/* 283AA4 */ bool it_80283AA4(Item_GObj* gobj);
 /* 283AC4 */ void it_80283AC4(Item_GObj*, Item_GObj*);
 /* 3F55D0 */ extern ItemStateTable it_803F55D0[];
 
