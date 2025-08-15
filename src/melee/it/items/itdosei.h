@@ -20,7 +20,7 @@
 /* 281D00 */ bool it_80281D00(Item_GObj* gobj);
 /* 281E30 */ void it_80281E30(Item_GObj* gobj);
 /* 281E34 */ bool it_80281E34(Item_GObj* gobj);
-/* 282074 */ UNK_RET it_80282074(UNK_PARAMS);
+/* 282074 */ void it_80282074(HSD_GObj* arg0);
 /* 2820CC */ bool it_802820CC(Item_GObj* gobj);
 /* 282130 */ void it_80282130(Item_GObj* gobj);
 /* 282160 */ bool it_80282160(Item_GObj* gobj);
